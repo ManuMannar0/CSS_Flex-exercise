@@ -1,3 +1,28 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 li{
     list-style: none;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex-item{
+    background:grey;
+    width: 10rem;
+    height: 12rem;
+
+    margin-top: 10px;
+
+    font-size: 2rem;
+    color: white;
+    text-align: center;    
+    line-height: 12rem;
+    
 }
