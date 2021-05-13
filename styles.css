@@ -1,1 +1,59 @@
+/**
+ * /*
+ * FLEX START
+ * -1- init->    
+ *     display: flex;
+ *     margin: 0;
+ *     padding: 0;
+ *  
+ * -2- define direction and wrap->
+ *     flex-flow: row wrap;.
+ *  
+ * -3- define remaining space->
+ *     justify-content: space-around;
+ *
+ * @format
+ */
 
+body {
+  color: rgb(107, 106, 106);
+}
+li {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid;
+  border-color: rgb(125, 73, 161);
+  background-color: rgb(205, 255, 130);
+}
+
+.flex-init {
+  margin: 0; /*1*/
+  padding: 0; /*1*/
+  display: flex; /*1*/
+  background-color: rgb(107, 106, 106);
+}
+
+.flex-semplice__items--style {
+  flex-flow: row wrap; /*3*/
+  justify-content: space-around; /*4*/
+}
+.flex-alto__items--style {
+  flex-flow: row wrap; /*3*/
+  justify-content: space-around; /*4*/
+  align-items: flex-end;
+  order: 4;
+  height: 50vh;
+}
+
+.flex-altopiu__items--style {
+  flex-flow: row wrap; /*3*/
+  justify-content: space-around; /*4*/
+  align-items: flex-end;
+  align-content: space-between;
+  order: 4;
+  height: 50vh;
+}
+
+.nowrap {
+  flex-flow: row nowrap;
+}
