@@ -1,29 +1,97 @@
-<!-- "HTML-Virgin" repo could be usefull -->
+<!-- @format -->
 
+<!-- *** -->
+<!-- Virgin-HTML-v1 -->
+<!-- *** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- FIRST GO TO "https://metatags.io/" in order to insert propers meta tags -->
+
+    <!-- Secondary Meta Tags -->
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="7" />
+    <meta name="language" content="it" />
+    <meta name="copyright" content="t" />
+    <meta name="author" content="Emanuele Mancari" />
+    <meta name="reply-to" content="mancariemanuele@gmail.com" />
+
+    <!-- browser icon -->
+    <link rel="icon" href="" />
+
+    <!-- js -->
+    <!-- <script src=""></script> -->
+
+    <!-- css -->
+    <link href="./styles.css" rel="stylesheet" />
     <body>
-        <div class="wrap">
-            <h1>CARDS</h1>
-            <hr>
-            <div class="portfolio">
-                <div class="menu">
-                    <ul>
-                        <li><a>Uno</a></li>
-                        <li><a>Due</a></li>
-                        <li><a>Tre</a></li>
-                        <li><a>Quattro</a></li>
-                        <li><a>Cinque</a></li>
-                    </ul> 
-                </div>
-                <div class="cards">
-                        <div id="card1"></div>
-                        <div id="card2"></div>
-                        <div id="card3"></div>
-                        <div id="card4"></div>
-                        <div id="card5"></div>
-                        <div id="card6"></div>
-                </div>
-            </div>
-            <button>BUTTON</button>
-        </div>
-    </body>
+      <div class="wrap">
+        <h1>Flexbox & BEM</h1>
+        <hr />
 
+        <h2>Semplice</h2>
+        <h3>Default (align-items:center) + justify-content:space-around</h3>
+        <section class="flex-semplice">
+          <ul class="flex-init flex-semplice__items--style">
+            <li>Uno</li>
+            <li>Due</li>
+            <li>Tre</li>
+            <li>Quattro</li>
+            <li>Cinque</li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <h2>Alto</h2>
+        <h3>Come sopra ma align-items: flex-end + altezza container</h3>
+        <section class="flex-alto">
+          <ul class="flex-init flex-alto__items--style">
+            <li>Uno</li>
+            <li>Due</li>
+            <li>Tre</li>
+            <li>Quattro</li>
+            <li>Cinque</li>
+          </ul>
+        </section>
+
+        <hr />
+        
+        <h2>Come sopra + tanti oggetti + align-content:space-between</h2>
+        <section class="flex-alto">
+          <ul class="flex-init flex-altopiu__items--style">
+            <li>Uno</li>
+            <li><p>.<p>Due</p></p></li>
+            <li>Tre</li>
+            <li><p>.<p>.<p>.<p>Quattro</p></p></p></p></li>
+            <li>Cinque</li>
+            <li><p>.<p><p><p>.<p>.<p>Sei</p>.</p>.</p></p></p></p></li>
+            <li>Sette</li>
+            <li>Otto</li>
+            <li>Nove</li>
+            <li>Dieci</li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <h2>Come sopra ma flex-wrap:nowrap</h2>
+        <section class="flex-alto">
+          <ul class="flex-init flex-altopiu__items--style nowrap">
+            <li>Uno</li>
+            <li><p>.<p>Due</p></p></li>
+            <li>Tre</li>
+            <li><p>.<p>.<p>.<p>Quattro</p></p></p></p></li>
+            <li>Cinque</li>
+            <li><p>.<p><p><p>.<p>.<p>Sei</p>.</p>.</p></p></p></p></li>
+            <li>Sette</li>
+            <li>Otto</li>
+            <li>Nove</li>
+            <li>Dieci</li>
+          </ul>
+        </section>
+      </div>
+    </body>
+  </head>
+</html>
