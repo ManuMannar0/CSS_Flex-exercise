@@ -34,20 +34,20 @@ li {
 }
 
 .flex-semplice__items--style {
-  flex-flow: row wrap; /*3*/
-  justify-content: space-around; /*4*/
+  flex-flow: row wrap; /*2*/
+  justify-content: space-around; /*3*/
 }
 .flex-alto__items--style {
-  flex-flow: row wrap; /*3*/
-  justify-content: space-around; /*4*/
+  flex-flow: row wrap; /*2*/
+  justify-content: space-around; /*3*/
   align-items: flex-end;
   order: 4;
   height: 50vh;
 }
 
 .flex-altopiu__items--style {
-  flex-flow: row wrap; /*3*/
-  justify-content: space-around; /*4*/
+  flex-flow: row wrap; /*2*/
+  justify-content: space-around; /*3*/
   align-items: flex-end;
   align-content: space-between;
   order: 4;
