@@ -15,22 +15,33 @@
  * @format
  */
 
+$body-color: #454472;
+$body-background-color: #202124;
+
+$flex-background-color: #663f6e;
+
+$li-border-color: rgb(125, 73, 161);
+$li-background-color: #cdff82;
+$li-box-shadow: 0 1px 40px 0 lawngreen;
+
+//
 body {
-  color: rgb(107, 106, 106);
+  color: $body-color;
+  background-color: $body-background-color;
 }
 li {
   list-style: none;
   padding: 1rem;
-  border: 1px solid;
-  border-color: rgb(125, 73, 161);
-  background-color: rgb(205, 255, 130);
+  background-color: #cdff82;
+  box-shadow: $li-box-shadow;
+  transition: 3s;
 }
 
 .flex-init {
   margin: 0; /*1*/
   padding: 0; /*1*/
   display: flex; /*1*/
-  background-color: rgb(107, 106, 106);
+  background-color: $flex-background-color;
 }
 
 .flex-semplice__items--style {
