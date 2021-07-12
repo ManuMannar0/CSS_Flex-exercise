@@ -1,0 +1,72 @@
+/**
+ * /*
+ * FLEX START
+ * -1- init->    
+ *     display: flex;
+ *     margin: 0;
+ *     padding: 0;
+ *  
+ * -2- define direction and wrap->
+ *     flex-flow: row wrap;.
+ *  
+ * -3- define remaining space->
+ *     justify-content: space-around;
+ *
+ * @format
+ */
+body {
+  color: #454472;
+  background-color: #202124;
+}
+
+li {
+  list-style: none;
+  padding: 1rem;
+  background-color: #cdff82;
+  box-shadow: 0 1px 40px 0 lawngreen;
+  transition: 3s;
+}
+
+.flex-init {
+  margin: 0;
+  /*1*/
+  padding: 0;
+  /*1*/
+  display: flex;
+  /*1*/
+  background-color: #663f6e;
+}
+
+.flex-semplice__items--style {
+  flex-flow: row wrap;
+  /*2*/
+  justify-content: space-around;
+  /*3*/
+}
+
+.flex-alto__items--style {
+  flex-flow: row wrap;
+  /*2*/
+  justify-content: space-around;
+  /*3*/
+  align-items: flex-end;
+  order: 4;
+  height: 50vh;
+}
+
+.flex-altopiu__items--style {
+  flex-flow: row wrap;
+  /*2*/
+  justify-content: space-around;
+  /*3*/
+  align-items: flex-end;
+  align-content: space-between;
+  order: 4;
+  height: 50vh;
+}
+
+.nowrap {
+  flex-flow: row nowrap;
+}
+
+/*# sourceMappingURL=index.css.map */
